@@ -1,0 +1,17 @@
+{
+  "name": "ledlanterns",
+  "version": "1.0.0",
+  "description": "kiwiburn sucks",
+  "main": "index.js",
+  "scripts": {
+    "start": "electro index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electro": "^2.0.3",
+    "electron": "^1.4.13",
+    "pixels-canvas": "^1.1.0"
+  }
+}
