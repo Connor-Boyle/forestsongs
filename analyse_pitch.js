@@ -1,7 +1,6 @@
 module.exports = function(cb){
   var audioContext = new AudioContext()
 
-
   navigator.getUserMedia(
       	{
               "audio": {
@@ -34,6 +33,19 @@ module.exports = function(cb){
         cb(ac)
       }
       setInterval(render, 1000/60)
+  }
+
+  function filterVoice()
+
+  function findNote(filteredStream) {
+      var notes = [{note:"C", frequency:256.87},
+                   {note:"D", frequency:288.33},
+                   {note:"E", frequency:323.63},
+                   {note:"F", frequency:342.88},
+                   {note:"G", frequency:384.87},
+                   {note:"A", frequency:432.00},
+                   {note:"B", frequency:484.90}
+                 ]
   }
 
   var MIN_SAMPLES = 0;  // will be initialized when AudioContext is created.
